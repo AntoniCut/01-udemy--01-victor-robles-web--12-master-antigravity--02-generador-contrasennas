@@ -1,7 +1,7 @@
-const gulp = require('gulp');
-const terser = require('gulp-terser');
-const cleanCSS = require('gulp-clean-css');
-const htmlmin = require('gulp-htmlmin');
+import gulp from 'gulp';
+import terser from 'gulp-terser';
+import cleanCSS from 'gulp-clean-css';
+import htmlmin from 'gulp-htmlmin';
 
 // Tarea para minificar JavaScript
 function jsTask() {
@@ -42,11 +42,11 @@ function copyTask() {
 }
 
 // Tarea principal (ejecuta todo en paralelo)
-const build = gulp.parallel(jsTask, cssTask, htmlTask, copyTask);
+const buildTask = gulp.parallel(jsTask, cssTask, htmlTask, copyTask);
 
-exports.js = jsTask;
-exports.css = cssTask;
-exports.html = htmlTask;
-exports.copy = copyTask;
-exports.build = build;
-exports.default = build;
+export const js = jsTask;
+export const css = cssTask;
+export const html = htmlTask;
+export const copy = copyTask;
+export const build = buildTask;
+export default buildTask;

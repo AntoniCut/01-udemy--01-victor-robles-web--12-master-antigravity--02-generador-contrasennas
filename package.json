@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Generador de contraseñas seguras — HTML5, CSS3, JavaScript vanilla",
   "private": true,
+  "type": "module",
   "scripts": {
     "build:prod": "gulp build",
     "clean": "rm -rf dist"
