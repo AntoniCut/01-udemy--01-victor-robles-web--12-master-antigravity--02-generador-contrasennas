@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "strict": true,
+    "target": "ES2017",
+    "lib": ["ES2017", "DOM", "DOM.Iterable"],
+    "moduleResolution": "node",
+    "noEmit": true
+  },
+  "include": ["assets/js/**/*.js"],
+  "exclude": ["node_modules"]
+}
