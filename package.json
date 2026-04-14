@@ -1,17 +1,18 @@
 {
-  "name": "generador-contrasenas",
-  "version": "1.0.0",
-  "description": "Generador de contraseñas seguras — HTML5, CSS3, JavaScript vanilla",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build:prod": "gulp build",
-    "clean": "rm -rf dist"
-  },
-  "devDependencies": {
-    "gulp": "^5.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-terser": "^2.1.0"
-  }
+    "name": "02-generador-contrasennas",
+    "version": "1.0.0",
+    "description": "Generador de contraseñas — HTML5, CSS3, JavaScript vanilla",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "gulp build"
+    },
+    "devDependencies": {
+        "del": "^8.0.1",
+        "gulp": "^5.0.1",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-terser": "^2.1.0"
+    }
 }
