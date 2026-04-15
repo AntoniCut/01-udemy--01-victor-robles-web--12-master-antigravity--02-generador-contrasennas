@@ -5,7 +5,8 @@
     "target": "ES2017",
     "lib": ["ES2017", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
-    "noEmit": true
+    "noEmit": true,
+    "ignoreDeprecations": "6.0"
   },
   "include": ["assets/js/**/*.js"],
   "exclude": ["node_modules"]
